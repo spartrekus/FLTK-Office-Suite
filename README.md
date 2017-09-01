@@ -7,6 +7,12 @@ FLTK-Office-Suite (Simple to Compile and according to Minimalist 10 guide rules 
 # Simple to compile:
 g++ -L/usr/local/lib -lfltk -lXext -lX11 -lm  "app-example.cxx"  -o app-example
 
-# To Install:
+# To Compile/Install:
 See Readme in the archive of this github project.
+
+# The Project is ALIVE !
+Work in Progress like Always !! 
+
+Current version: 0.1 (early beta)
+
 
