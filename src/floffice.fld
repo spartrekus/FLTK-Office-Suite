@@ -5,7 +5,7 @@ code_name {.cxx}
 Function {make_window()} {open
 } {
   Fl_Window {} {open
-    xywh {117 249 490 375} type Double visible
+    xywh {284 338 485 470} type Double visible
   } {
     Fl_Button {} {
       label FLCALC
@@ -28,11 +28,11 @@ Function {make_window()} {open
       image {clock.png} xywh {355 25 100 100}
     }
     Fl_Button {} {
-      callback {system( " cd ; rox  & ") ;}
+      callback {system( " cd ; mkdir Documents ; rox Documents  & ") ;}
       image {file-manager.png} xywh {25 130 100 100}
     }
     Fl_Button {} {
-      callback {system( " cd ; rox Documents & ") ;}
+      callback {system( " cd ; rox & ") ;}
       image {kfm_home.png} xywh {135 130 100 100}
     }
     Fl_Button {} {
@@ -41,7 +41,7 @@ Function {make_window()} {open
     }
     Fl_Button {} {
       callback {system( " xpaint & ") ;}
-      image {kpaint.png} xywh {355 130 100 100}
+      image {applications-graphics.png} xywh {355 130 100 100}
     }
     Fl_Button {} {
       callback {system( " cd ; cd wallpapers ; flwallpaper & ") ;}
@@ -52,12 +52,32 @@ Function {make_window()} {open
       image {terminal.png} xywh {135 236 100 100}
     }
     Fl_Button {} {
-      callback {system( " cd ; cd games/sms ; xterm -e ncgamemed  & ") ;}
-      image {kasteroids.png} xywh {245 237 100 100}
+      callback {// system( " cd ; cd games/sms ; xterm -e ncgamemed  & ") ;
+
+ 
+ 
+   system( " flgames & " );} selected
+      image {applications-games.png} xywh {245 237 100 100}
     }
     Fl_Button {} {
-      callback {system( " streamtuner2  & ") ;} selected
+      callback {system( " streamtuner2  & ") ;}
       image {kaudiocreator.png} xywh {355 236 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " abiword & " );}
+      image {application-x-abiword.png} xywh {25 344 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " fleditpad & " );}
+      image {text-x-tex.png} xywh {135 345 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " gcompris & " );}
+      image {applications-education.png} xywh {245 345 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " flsettings & " );}
+      image {preferences-system.png} xywh {355 345 100 100}
     }
   }
   code {w->show();} {}

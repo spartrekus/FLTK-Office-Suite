@@ -1,0 +1,48 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+Function {make_window()} {open
+} {
+  Fl_Window {} {open
+    xywh {282 382 600 375} type Double visible
+  } {
+    Fl_Button {} {
+      image {ledpurple.png} xywh {135 23 100 100}
+    }
+    Fl_Button {} {
+      image {ledpurple.png} xywh {245 23 100 100}
+    }
+    Fl_Button {} {
+      image {ledpurple.png} xywh {355 23 100 100}
+    }
+    Fl_Button {} {
+      image {ledpurple.png} xywh {135 130 100 100}
+    }
+    Fl_Button {} {
+      image {ledpurple.png} xywh {245 130 100 100}
+    }
+    Fl_Button {} {
+      image {ledpurple.png} xywh {355 130 100 100}
+    }
+    Fl_Button {} {selected
+      image {ledpurple.png} xywh {135 236 100 100}
+    }
+    Fl_Button {} {
+      image {ledpurple.png} xywh {245 237 100 100}
+    }
+    Fl_Button {} {
+      image {ledpurple.png} xywh {355 236 100 100}
+    }
+  }
+  code {w->show();} {}
+} 
+
+Function {main()} {open return_type int
+} {
+  code {printf("Hello, World!\\n");
+
+make_window();
+
+Fl::run();} {}
+} 

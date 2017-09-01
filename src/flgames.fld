@@ -1,0 +1,69 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+Function {make_window()} {open
+} {
+  Fl_Window {} {open
+    xywh {402 382 480 360} type Double visible
+  } {
+    Fl_Button {} {
+      callback {system( " flsketch & ") ;}
+      image {draw-freehand.png} xywh {25 23 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " flfreecell ; xsol  & ") ;}
+      image {Cardgame.png} xywh {135 23 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " flballgame  & ") ;}
+      image {ledpurple.png} xywh {245 23 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " flbuggame  & ") ;}
+      image {tools-report-bug.png} xywh {355 23 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " xboard & ") ;}
+      image {applications-games-strategy.png} xywh {25 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " flhomer & " );}
+      image {kfm_home.png} xywh {135 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " cd ; cd games ; cd mednafen ;  xterm -e ncgamemed   & ") ;}
+      image {openterm.png} xywh {245 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " flpiano & ") ;}
+      image {piano.png} xywh {355 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " xmahjongg & ") ;} selected
+      image {kbackgammon.png} xywh {25 236 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " flhangman & ") ;}
+      image {khangman.png} xywh {135 236 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " cd ; cd games ; cd sms ; flgamemed & ") ;}
+      image {kiten.png} xywh {245 237 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " fldemineur ; xdemineur & ") ;}
+      image {kmines.png} xywh {355 236 100 100}
+    }
+  }
+  code {w->show();} {}
+} 
+
+Function {main()} {open return_type int
+} {
+  code {printf("Hello, World!\\n");
+
+make_window();
+
+Fl::run();} {}
+} 

@@ -2,31 +2,59 @@
 version 1.0302 
 header_name {.h} 
 code_name {.cxx}
-decl {\#include <stdio.h>} {private local
-} 
-
-decl {\#include <stdlib.h>} {private local
-} 
-
 Function {make_window()} {open
 } {
-  Fl_Window {} {open selected
-    xywh {498 571 555 295} type Double visible
+  Fl_Window {} {open
+    xywh {141 594 480 360} type Double visible
   } {
     Fl_Button {} {
-      label {Setterm (noblank)}
-      callback {system( "   setterm -blank 0 -powerdown 0 ;    xset s off ;  xset -dpms ;  xset s noblank " );}
-      xywh {15 110 145 35}
+      label JOBS
+      callback {system( "  xterm -e lpq -a & " );}
+      image {printer.png} xywh {25 23 100 100}
     }
     Fl_Button {} {
-      label {xterm (default)}
-      callback {system( " xterm -bg black -fg green " );}
-      xywh {15 35 145 35}
+      label {ADD/SUPP.}
+      callback {system( "  xterm -e lpq -a & " );}
+      image {printer.png} xywh {135 23 100 100}
     }
     Fl_Button {} {
-      label {xterm (msx)}
-      callback {system( " xterm -fa 15 -bg black -fg green " );}
-      xywh {15 75 145 30}
+      callback {system( "  cd ; touch .bookmarks.ini ; fleditpad .bookmarks.ini & " );}
+      image {tools-wizard.png} xywh {245 23 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " dillo & " );}
+      image {konqueror.png} xywh {355 23 100 100}
+    }
+    Fl_Button {} {
+      image {preferences-desktop-display-randr.png} xywh {25 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( "  xterm -e ' cal ; read key ' & " );}
+      image {date.png} xywh {135 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " xfontsel & " );}
+      image {preferences-desktop-font.png} xywh {245 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " flkeyboard & " );}
+      image {preferences-desktop-keyboard-layout.png} xywh {355 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " flaudio & " );} selected
+      image {amarok.png} xywh {25 236 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " flpackages & " );}
+      image {package.png} xywh {135 236 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " flreportbug & " );}
+      image {tools-report-bug.png} xywh {245 237 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " xterm -bg black -fg red -e su  & " );}
+      image {openterm.png} xywh {355 236 100 100}
     }
   }
   code {w->show();} {}
@@ -36,7 +64,7 @@ Function {main()} {open return_type int
 } {
   code {printf("Hello, World!\\n");
 
- make_window();
+make_window();
 
- Fl::run();} {}
+Fl::run();} {}
 } 
