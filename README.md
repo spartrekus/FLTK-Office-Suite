@@ -5,6 +5,8 @@ FLTK-Office-Suite (Simple to Compile and according to Minimalist 10 guide rules 
 
 ![Desktop in Action](https://raw.githubusercontent.com/spartrekus/FLTK-Office-Suite/master/floffice-desktop-0.1.png)
 
+![FLTK Applications](https://raw.githubusercontent.com/spartrekus/FLTK-Office-Suite/master/floffice.desktop2.png)
+
 
 
 # Simple to compile:
