@@ -1,0 +1,13 @@
+
+
+1) go to src directory, and run:
+   make all
+
+2) ./fltkmakelist 
+
+3) Have a look at the newly created files into the directory bin.
+
+4) You can then instlal and/or run floffice.
+
+
+

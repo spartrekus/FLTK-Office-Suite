@@ -1,0 +1,73 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+Function {make_window()} {open
+} {
+  Fl_Window {} {open
+    xywh {117 249 490 375} type Double visible
+  } {
+    Fl_Button {} {
+      label FLCALC
+      callback {system( " flcalc & ") ;}
+      image {accessories-calculator.png} xywh {25 25 100 100}
+    }
+    Fl_Button {} {
+      label FLEDITPAD
+      callback {system( " fleditpad & ") ;}
+      image {accessories-text-editor.png} xywh {135 25 100 100}
+    }
+    Fl_Button {} {
+      label SOUND
+      callback {system( " xterm -e alsamixer & ") ;}
+      image {amarok.png} xywh {245 25 100 100}
+    }
+    Fl_Button {} {
+      label CLOCK
+      callback {system( " flclock & ") ;}
+      image {clock.png} xywh {355 25 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " cd ; rox  & ") ;}
+      image {file-manager.png} xywh {25 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " cd ; rox Documents & ") ;}
+      image {kfm_home.png} xywh {135 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " chromium-browser & ") ;}
+      image {konqueror.png} xywh {245 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " xpaint & ") ;}
+      image {kpaint.png} xywh {355 130 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " cd ; cd wallpapers ; flwallpaper & ") ;}
+      image {preferences-desktop-icons.png} xywh {25 236 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " xterm -bg black -fg green  & ") ;}
+      image {terminal.png} xywh {135 236 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " cd ; cd games/sms ; xterm -e ncgamemed  & ") ;}
+      image {kasteroids.png} xywh {245 237 100 100}
+    }
+    Fl_Button {} {
+      callback {system( " streamtuner2  & ") ;} selected
+      image {kaudiocreator.png} xywh {355 236 100 100}
+    }
+  }
+  code {w->show();} {}
+} 
+
+Function {main()} {open return_type int
+} {
+  code {printf("Hello, World!\\n");
+
+make_window();
+
+Fl::run();} {}
+} 
