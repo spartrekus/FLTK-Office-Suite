@@ -10,7 +10,7 @@ g++ -L/usr/local/lib -lfltk -lXext -lX11 -lm  "app-example.cxx"  -o app-example
 # To Compile/Install:
 See Readme in the archive of this github project.
 
-# The Project is ALIVE !
+# The Project is ALIVE and Under Development !
 Work in Progress like Always !! 
 
 Current version: 0.1 (early beta)
