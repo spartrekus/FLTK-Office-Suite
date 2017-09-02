@@ -5,11 +5,11 @@ code_name {.cxx}
 Function {make_window()} {open
 } {
   Fl_Window {} {open
-    xywh {402 382 480 360} type Double visible
+    xywh {196 572 480 360} type Double visible
   } {
     Fl_Button {} {
-      callback {system( " flsketch & ") ;}
-      image {draw-freehand.png} xywh {25 23 100 100}
+      callback {system( " gcompris & ") ;}
+      image {applications-education.png} xywh {25 23 100 100}
     }
     Fl_Button {} {
       callback {system( " flfreecell ; xsol  & ") ;}
@@ -28,8 +28,8 @@ Function {make_window()} {open
       image {applications-games-strategy.png} xywh {25 130 100 100}
     }
     Fl_Button {} {
-      callback {system( " flhomer & " );}
-      image {kfm_home.png} xywh {135 130 100 100}
+      callback {system( " flmath & " );}
+      image {kwin4.png} xywh {135 130 100 100}
     }
     Fl_Button {} {
       callback {system( " cd ; cd games ; cd mednafen ;  xterm -e ncgamemed   & ") ;}
@@ -40,8 +40,8 @@ Function {make_window()} {open
       image {piano.png} xywh {355 130 100 100}
     }
     Fl_Button {} {
-      callback {system( " xmahjongg & ") ;} selected
-      image {kbackgammon.png} xywh {25 236 100 100}
+      callback {system( " xmahjongg & ") ;}
+      image {kmahjong.png} xywh {25 236 100 100}
     }
     Fl_Button {} {
       callback {system( " flhangman & ") ;}

@@ -1,0 +1,45 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+Function {make_window()} {open
+} {
+  Fl_Window {} {open
+    xywh {183 159 745 685} type Double resizable visible
+  } {
+    Fl_Button {} {
+      label {USB MEDIA}
+      image {drive-removable-media-usb-pendrive.png} xywh {115 15 100 100}
+    }
+    Fl_Button {} {
+      label CDROM
+      image {media-optical-recordable.png} xywh {10 15 100 100}
+    }
+    Fl_Button {} {
+      label DRIVES
+      image {drive-harddisk.png} xywh {327 15 100 100}
+    }
+    Fl_Button {} {
+      label SHARE
+      image {samba_unmount.png} xywh {221 15 100 100}
+    }
+    Fl_File_Browser flbrow {
+      xywh {10 165 720 510} resizable
+    }
+    Fl_Input {} {
+      label {Dir:} selected
+      xywh {40 126 690 31}
+    }
+  }
+  code {} {}
+  code {flbrow->load("." );
+
+w->show();} {}
+} 
+
+Function {main()} {open return_type int
+} {
+  code {make_window();
+
+Fl::run();} {}
+} 

@@ -1,0 +1,55 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+Function {make_window()} {open
+} {
+  Fl_Window {} {open
+    xywh {85 516 355 360} type Double visible
+  } {
+    Fl_Button {} {
+      label FLEXPLORER
+      callback {system( " flexplorer & " );} selected
+      image {media-floppy.png} xywh {15 23 100 100}
+    }
+    Fl_Button {} {
+      label {USB MEDIA}
+      image {drive-removable-media-usb-pendrive.png} xywh {125 23 100 100}
+    }
+    Fl_Button {} {
+      label CDROM
+      image {media-optical-recordable.png} xywh {234 23 100 100}
+    }
+    Fl_Button {} {
+      label FLCOMMAND
+      image {media-floppy.png} xywh {15 135 100 100}
+    }
+    Fl_Button {} {
+      label DRIVES
+      image {drive-harddisk.png} xywh {125 135 100 100}
+    }
+    Fl_Button {} {
+      label SHARE
+      image {samba_unmount.png} xywh {235 134 100 100}
+    }
+    Fl_Button {} {
+      xywh {14 244 100 100}
+    }
+    Fl_Button {} {
+      xywh {125 244 100 100}
+    }
+    Fl_Button {} {
+      xywh {235 245 100 100}
+    }
+  }
+  code {w->show();} {}
+} 
+
+Function {main()} {open return_type int
+} {
+  code {printf("Hello, World!\\n");
+
+make_window();
+
+Fl::run();} {}
+} 

@@ -56,7 +56,7 @@ Function {make_window()} {open
 
  
  
-   system( " flgames & " );} selected
+   system( " flgames & " );}
       image {applications-games.png} xywh {245 237 100 100}
     }
     Fl_Button {} {
@@ -72,8 +72,8 @@ Function {make_window()} {open
       image {text-x-tex.png} xywh {135 345 100 100}
     }
     Fl_Button {} {
-      callback {system( " gcompris & " );}
-      image {applications-education.png} xywh {245 345 100 100}
+      callback {system( " flfilemenu & " );} selected
+      image {media-floppy.png} xywh {245 345 100 100}
     }
     Fl_Button {} {
       callback {system( " flsettings & " );}

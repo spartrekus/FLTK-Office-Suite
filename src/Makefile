@@ -1,6 +1,7 @@
 
 all:
 	   gcc fltkmakelist.c -o fltkmakelist
+	   gcc fltkimgmakelist.c -o fltkimgmakelist
 
 
 install:
