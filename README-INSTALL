@@ -13,13 +13,15 @@
 
 ======================================================================
 
-Packages:
+Needed Packages:
   FLTK 1.3
+  g++ and gcc 
+  
+If you would like to have X11 lightweight games: 
   xsol
   xmajhongg
   xdemineur
   xboard
-  g++ and gcc 
   
 Fluid if you would like to join the dev ! Welcome!
 
