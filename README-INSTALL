@@ -1,5 +1,7 @@
 
 
+======================================================================
+
 1) go to src directory, and run:
    make all
 
@@ -9,5 +11,15 @@
 
 4) You can then instlal and/or run floffice.
 
+======================================================================
 
+Packages:
+  FLTK 1.3
+  xsol
+  xmajhongg
+  xdemineur
+  xboard
+  g++ and gcc 
+  
+Fluid if you would like to join the dev ! Welcome!
 
