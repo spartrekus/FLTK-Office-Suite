@@ -7,6 +7,7 @@ FLTK-Office-Suite (Simple to Compile and according to Minimalist 10 guide rules 
 
 ![FLTK Applications](https://raw.githubusercontent.com/spartrekus/FLTK-Office-Suite/master/floffice.desktop2.png)
 
+![FLEXPLORER](https://raw.githubusercontent.com/spartrekus/FLTK-Office-Suite/master/floffice.desktop3.flexplorer.png)
 
 
 # Simple to compile:
